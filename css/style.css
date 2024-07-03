@@ -1,0 +1,186 @@
+*{
+    /*reseteo de código*/
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.grd-container{
+    display: grid;
+    grid-template-rows: 20% max-content max-content;
+    grid-template-areas: 
+    "logo . . . . . ."
+    "logo nombre . . . . ."
+    "logo subnombre . . . . .";
+}
+
+.grd-logo{
+    grid-area: logo;
+    width: 20rem;
+    justify-content: center;
+    padding: 2%;
+}
+
+.grd-nombre{
+    grid-area: nombre;
+    text-align: left;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grd-subnombre{
+    grid-area: subnombre;
+    text-align: left;
+    justify-content: center;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    text-align: center;    
+    background-image:url(../img/pattern_cloud.webp)
+}
+
+header img{
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.nav_prop:hover{
+    background-color: #7523c3;
+    color: whitesmoke !important;
+    font-size: fs-4;
+}
+
+h3{
+    font-size:xx-large;
+    text-align:center ;
+}
+
+.a_transparente{
+    background-color: transparent;
+}
+
+.a_boton{
+    background-color: cadetblue;
+}
+
+td{
+    text-align: center;
+}
+
+
+.img_size{
+    width: 50%;
+    justify-content: center;
+}
+
+.table_img{
+    width: 200px;
+}
+
+.table_img2{
+    width: 150px;
+}
+
+.linea {
+    border: 0;
+    width: 90%;
+    height: .6rem;
+    background-image: linear-gradient(to right,transparent,#6e12c4,transparent);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;    
+    background-image:url(../img/pattern_cloud.webp);
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.ft-social {
+   padding: 0;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.25rem;
+}
+
+.ft-social-li {
+  /* margin: 0.5rem;*/
+    padding: 0%;
+   /*font-size: 1.25rem;*/
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #7523c3;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+.ft-legal-li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+
+}
+/* one before the last child */
+.ft-legal-li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
+
+.tumb{
+    width: 15%;
+}
+
+
+@media screen and (max-width:480px) {
+
+    .ft-main {
+        justify-content: space-around;
+    }
+
+    .grd-container{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column: 1fr;
+        grid-template-areas: 
+        "logo"
+        "nombre"
+        "subnombre";
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .ft-main {
+        justify-content: space-evenly;
+    }
+
+    .grd-container{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo nombre"
+        "logo subnombre";
+    }
+
+}
