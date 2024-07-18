@@ -1,0 +1,46 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;    
+    background-image:url(../img/pattern_cloud.webp);
+    line-height: 1.5;
+    .ft-social{
+        padding: 0;
+        list-style: none;
+        padding-left: 0%;
+            .ft-social-list{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 1.25rem;
+                    .ft-social-li{
+                    padding: 0%;
+                    }
+                    .tumb{
+                        width: 15%;
+                    }  
+            }
+    }
+    .ft-legal{
+        padding: 0.9375rem 1.875rem;
+        background-color: #7523c3;
+        ul{
+            .ft-legal-list{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                color: white;
+                li{
+                    .ft-legal-li{
+                        margin: 0.125rem 0.625rem;
+                        white-space: nowrap;
+                        &:nth-last-child(2) {
+                            flex: 1;
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}

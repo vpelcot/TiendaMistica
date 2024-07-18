@@ -1,0 +1,44 @@
+header{
+    text-align: center;
+    background-image:url(../img/pattern_cloud.webp);
+    img{
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .grd-container{
+        display: grid;
+        grid-template-rows: 20% max-content;
+        grid-template-areas: 
+        "logo nombre"
+        "logo nombre"
+        "logo subnombre";
+        .grd-logo {
+            grid-area: logo;
+            width: 20rem;
+            justify-content: center;
+            padding: 2%;
+            }
+
+        .grd-nombre{
+            grid-area: nombre;
+            text-align: left;
+            padding-top: 5%;
+            font-size: 4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .grd-subnombre{
+            grid-area: subnombre;
+            text-align: left;
+            justify-content: center;
+            gap: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }    
+        }
+        .nav_prop:hover{
+            background-color: #7523c3;
+            color: whitesmoke !important;
+            font-size: fs-4;
+        }
+    }
