@@ -3,13 +3,16 @@ footer{
     justify-content: space-around;
     flex-direction: column;
     text-align: center;    
-    background-image:url(../img/pattern_cloud.webp);
+    background-color: $fondo;
     line-height: 1.5;
+    margin: auto;
+	width: 80%;
     .ft-social{
         padding: 0;
         list-style: none;
         padding-left: 0%;
             .ft-social-list{
+                list-style-type: none;
                 display: flex;
                 justify-content: space-around;
                 padding-top: 1.25rem;
@@ -19,22 +22,25 @@ footer{
                     .tumb{
                         width: 15%;
                     }  
-            }
+            }   
     }
     .ft-legal{
         padding: 0.9375rem 1.875rem;
-        background-color: #7523c3;
+        background-color: $boton;
+        color: $letra;
         ul{
+            list-style-type: none;
             .ft-legal-list{
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                color: white;
+                color: $letra;
                 li{
                     .ft-legal-li{
                         margin: 0.125rem 0.625rem;
                         white-space: nowrap;
+                        color: $letra;
                         &:nth-last-child(2) {
                             flex: 1;
                         }  

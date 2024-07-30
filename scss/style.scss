@@ -1,18 +1,6 @@
-*{
-    /*reseteo de código*/
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-
+@import "var";
+@import "body";
 @import "header";
-
-.linea{
-    border: 0;
-    width: 90%;
-    height: .6rem;
-    background-image: linear-gradient(to right,transparent,#6e12c4,transparent);
-}
-
+@import "main";
 @import "footer";
 @import "media";

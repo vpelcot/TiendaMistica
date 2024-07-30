@@ -1,6 +1,12 @@
 header{
     text-align: center;
-    background-image:url(../img/pattern_cloud.webp);
+    background-color: $fondo;
+    margin: auto;
+	width: 80%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
     img{
         width: 200px;
         padding: 20px;
@@ -37,8 +43,10 @@ header{
         }    
         }
         .nav_prop:hover{
-            background-color: #7523c3;
+            background-color: $boton;
             color: whitesmoke !important;
             font-size: fs-4;
         }
     }
+
+ 
