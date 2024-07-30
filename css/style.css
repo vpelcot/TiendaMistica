@@ -25,7 +25,7 @@ header {
   text-align: center;
   background-color: #f6e1ff;
   margin: auto;
-  width: 80%;
+  width: 90%;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -79,7 +79,7 @@ footer {
   background-color: #f6e1ff;
   line-height: 1.5;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 footer .ft-social {
   padding: 0;
